@@ -1,4 +1,3 @@
-
 body {
     background-color: #e0e0e0; 
     font-family: Arial, sans-serif;
@@ -12,88 +11,34 @@ h1 {
     font-weight: normal;
     color: black;
 }
-
-
 .container {
     display: grid;
     width: 80%;
-
-
-
-    grid-template-columns: 1fr 2fr; 
-    
-
+grid-template-columns: 1fr 2fr; 
     grid-template-rows: 50px 75px 75px 50px;
-
- 
-    grid-template-areas:
+grid-template-areas:
         "header header"
         "aside  main"
         "nav    main"
         "footer footer";
 }
-
-
-/* .container > * {
-    display: flex;
+.container > * {
+    display: grid;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     font-weight: 500;
-    color: #444; 
-} */
-
-
+    color: #444; }
 header {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-
-    grid-area: header;
-    background-color: red ;
-    /* padding: 15px;
-    text-align: center; */
- 
-
-}
-
-aside {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-area: aside;
-    background-color: #89cff0; 
-    /* text-align: center;
-    padding: 30px; */
-}
-
-nav {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-area: nav;
-    background-color: #f8c9c7;
-    /* text-align: center; 
-    padding: 30px; */
-}
-
-main {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-area: main;
-    background-color: #fbe0c3;
-    /* padding: 65px;
-    text-align: center; */
-    
-}
-
+  grid-area: header;
+background-color: red ;}
+aside {grid-area: aside;
+    background-color: #89cff0; }
+nav {grid-area: nav;
+    background-color: #f8c9c7;}
+main {grid-area: main;
+    background-color: #fbe0c3;}
 footer {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-area: footer;
+ grid-area: footer;
     background-color: #89d9b6;
-    /* text-align: center; 
-    padding: 30px; */
 }
